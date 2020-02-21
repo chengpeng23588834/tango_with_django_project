@@ -65,13 +65,11 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'django.template. comtext_processors.media',
+                'django.template.context_processors.media',
             ],
         },
     },
 ]
-
-STATICFILES_DIRS = [STATIC_DIR,]
 
 WSGI_APPLICATION = 'tango_with_django_project.wsgi.application'
 
@@ -122,8 +120,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
-
-STATIC_URL = '/static/'
+STATIC_URL = "/static/"
+STATICFILES_DIRS = [STATIC_DIR,]
 
 MEDIA_ROOT = MEDIA_DIR
-MEDIA_URL = '/media/'
+MEDIA_ULR = "/media/"
